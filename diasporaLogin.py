@@ -1,3 +1,4 @@
+# will run a selenium/python test in firefox against your local install of diaspora*
 import time
 from selenium import webdriver
 
@@ -19,6 +20,7 @@ try:
     element.click()
     time.sleep(5)
     driver.save_screenshot("result.png")
+    
 finally:
 
     driver.quit()
