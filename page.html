@@ -1,0 +1,380 @@
+<html dir="ltr" lang="en"><head prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article# profile: http://ogp.me/ns/profile#">
+<meta content="width=device-width, initial-scale=1" name="viewport">
+<link rel="stylesheet" media="all" href="/assets/color_themes/original/desktop-692b52bae36abd6e9d0b127c49bd1db262148edbc29f0280315896374f3fa3e0.css">
+<title>
+diaspora* - Sign in
+
+</title>
+<meta charset="utf-8">
+<meta name="description" content="diaspora* is the online social world where you are in control.">
+<meta property="description" content="diaspora* is the online social world where you are in control.">
+<meta property="og:site_name" content="diaspora* social network">
+<meta property="og:url" content="http://localhost:3000/">
+<meta property="og:image" content="http://127.0.0.1:3000/assets/branding/logos/asterisk.png">
+<meta property="og:type" content="website">
+<link href="/manifest.json" rel="manifest">
+<!-- favicon -->
+<!-- For Apple devices -->
+<link href="/assets/apple-touch-icon-9f7c9cc3923b4817fbb25bfeb0dd5fd34638827fd9c82b5a03f7b68e6e90806f.png" rel="apple-touch-icon">
+<!-- For Nokia devices -->
+<link href="/assets/apple-touch-icon-9f7c9cc3923b4817fbb25bfeb0dd5fd34638827fd9c82b5a03f7b68e6e90806f.png" rel="shortcut icon">
+<!-- All others -->
+<link href="/assets/favicon-158d223c914fb4936d3b14294dbc3f0d4d87ffced0694cc013cca43910ef2324.png" rel="shortcut icon">
+<script src="/assets/jquery3.self-e200ee796ef24add7054280d843a80de75392557bb4248241e870fac0914c0c1.js?body=1"></script>
+<script src="/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1"></script>
+<script nonce="yKL17dq3aMh0nTgE4dGgad5Zi7VL0Ied/TDeHY9ZpQ8=">jQuery.ajaxSetup({'cache': false});</script>
+<script nonce="yKL17dq3aMh0nTgE4dGgad5Zi7VL0Ied/TDeHY9ZpQ8=">
+//<![CDATA[
+window.gon={};gon.appConfig={"chat":{"enabled":false},"settings":{"podname":"diaspora*"},"map":{"mapbox":{"enabled":false,"access_token":null,"style":"mapbox/streets-v9"}}};gon.preloads={};
+//]]>
+</script>
+<script src="/assets/js_image_paths.self-4907c8ae89be54bd36a05e46d61fcb04c7c7942fe9657f3ca357c1d264d8be1e.js?body=1"></script>
+<script src="/assets/js-routes.self-7834e5e56abec4dafd7c7dadb27f07b60d48f2dc014370734ce23b6d55de2c86.js?body=1"></script>
+<script src="/assets/underscore/underscore.self-3b8d7bf449fccda6ce94f60136f1a9f1c174ba1d2f9d26695b843a525d61fbc7.js?body=1"></script>
+<script src="/assets/underscore.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1"></script>
+<script src="/assets/backbone/backbone.self-24dd2eef4f35014e126628a40f528a1d248193f04d54589313de6a2bef9a07a6.js?body=1"></script>
+<script src="/assets/backbone.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1"></script>
+<script src="/assets/autosize/autosize.self-f51d954e504de1c9ae1b142882aec3ffd69119c3ebb359d942f7b9fee5550345.js?body=1"></script>
+<script src="/assets/autosize.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1"></script>
+<script src="/assets/charcount.self-3b60ff297a332a41889a533d81bfabe2685d975f7514a9ec3025c7efbed7f3aa.js?body=1"></script>
+<script src="/assets/jquery-placeholder/jquery.placeholder.self-c8383ffc1e2e14a9e5a16f91ac46fcfd39a26cda87cfc4a2f30d8d92cfa75d11.js?body=1"></script>
+<script src="/assets/jquery-placeholder.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1"></script>
+<script src="/assets/jquery.timeago.self-15fa35b17def5c9e2a143afc8e62d89d4d7473239927a6832674c198780e4207.js?body=1"></script>
+<script src="/assets/jquery.ui/ui/core.self-93be4d22eda916787802a64d8f88b52db8a9027d4ccbbc0942625324a7d12d44.js?body=1"></script>
+<script src="/assets/jquery.ui/ui/widget.self-c1602241ddc51216b58391768667068867b8e15b9efc722befcd25771eda6819.js?body=1"></script>
+<script src="/assets/jquery.ui/ui/mouse.self-604dbc8cd399c6502dbe6e29b54626f7c2eacf598f5b431b132f8c099c28f2ce.js?body=1"></script>
+<script src="/assets/jquery.ui/ui/sortable.self-0e64cdc36047acb1aea4c57ed847d3089fb1665d1d9fc97bebf69570a86cd90c.js?body=1"></script>
+<script src="/assets/keycodes.self-c368cd7b086dc906b0c092ff3a52b15701300fb10134b1829b0f16802214885a.js?body=1"></script>
+<script src="/assets/jquery.autoSuggest.custom.self-325dc912449390273a68d26ed0995663667ffe6decc1b5324a6991b00ce1c2e4.js?body=1"></script>
+<script src="/assets/fine-uploader/fine-uploader.core.self-fded163de0fb4accd28ca582983c8ece5d11ade05f223472a238ea13fa43dc5c.js?body=1"></script>
+<script src="/assets/handlebars.runtime.self-900a6b53c03034485a74032160121d9d5d04ddbaf0b2c9a0d8aeb1e7821b2f94.js?body=1"></script>
+<script src="/assets/aspect_create_modal_tpl.jst.self-84607caded4608cdd9b110b18b1f7fc9c1e2bb5443e55f58c9906bef4a49cfa5.js?body=1"></script>
+<script src="/assets/aspect_membership_dropdown_tpl.jst.self-af12619e787072caaf32c3981a92ff8f2cfb5689fd33c05f09fa9780a7f6dba1.js?body=1"></script>
+<script src="/assets/aspect_tpl.jst.self-36cea960059a198fc076cb8bac524dc2ff5e98d383c1b41446849fe263d0d723.js?body=1"></script>
+<script src="/assets/aspects-list_tpl.jst.self-4de6b3259510738247e45b13608231c9e25bcdfb26db3a2a809514e52b6f1f24.js?body=1"></script>
+<script src="/assets/comment-stream_tpl.jst.self-ada3562d565ec56b3bd7298eb09877ff053837c1c08a08b3d684b7695911854e.js?body=1"></script>
+<script src="/assets/comment_tpl.jst.self-83ee1f5616ddcc0ac7268a7b770a2e7a532cc153d4ffefac92f2a74a0e88e4e8.js?body=1"></script>
+<script src="/assets/contact_tpl.jst.self-e86f9a3a5277e6917f6aece71ad7e2d719d81fa233691d37bfd10b0f8ab40642.js?body=1"></script>
+<script src="/assets/conversation_recipient_tag_tpl.jst.self-be5b2034921459837573a559995d3bc192ced60ad1ef5978eada1199ff5271f4.js?body=1"></script>
+<script src="/assets/faq_chat_tpl.jst.self-fd3ab27556bcd94f12d5ef1a42108835594d46a68a1839e02739369abe457daa.js?body=1"></script>
+<script src="/assets/faq_getting_help_tpl.jst.self-f000bf8926223608172cee1e7fd3ea02804e0019d79dccc21c41d822e0f78202.js?body=1"></script>
+<script src="/assets/faq_keyboard_shortcuts_tpl.jst.self-694cd9b5206921a97c5f79f611587b9650939bf4d3fc93b02ae65adf7d67555d.js?body=1"></script>
+<script src="/assets/faq_posts_and_posting_tpl.jst.self-cb0714f4f9515f7476ed975c4ca9544927596d617189f5df1fbd9c096f96e247.js?body=1"></script>
+<script src="/assets/faq_question_tpl.jst.self-81f8e24f0dd14e9f4bb494c51c115a8dbabdc6ec8124b0ec53353326bbd45945.js?body=1"></script>
+<script src="/assets/faq_sharing_tpl.jst.self-c1d9534f54c23ba974ce1e490cb56d8abb1bac8389f467d83cd92a33483fca45.js?body=1"></script>
+<script src="/assets/faq_tags_tpl.jst.self-74870c99d381a780959d901631c655ac82a05b695babfa64f0efd81bfeef3218.js?body=1"></script>
+<script src="/assets/feedback_tpl.jst.self-bfead35aa1e3163f21e5cc9135acbdc465f6c1c280124787864a5dbc162ec4cd.js?body=1"></script>
+<script src="/assets/flash_messages_tpl.jst.self-a0993f3fe11162f5ab7894fef8dd06df0d8d6faa97f219eb75ff1d908941b7d2.js?body=1"></script>
+<script src="/assets/header_tpl.jst.self-f977d54a20e145aa7ef5a8ea4cdc4831e5720c54d3fce86413c569eb9f782955.js?body=1"></script>
+<script src="/assets/help_tpl.jst.self-a3554a0446b50c0b11b7a709619e4f2c617669bfa6dd47b5aa0483caf164e36f.js?body=1"></script>
+<script src="/assets/hovercard_tpl.jst.self-96100ebbbe9c72758c6ad5626e762a9825fb549d178d684d29cea3e30337ca6f.js?body=1"></script>
+<script src="/assets/likes-info_tpl.jst.self-0683946f0367d6efede88d1ed6442d48999d60cf4cd47aaf8c75ad27e720637b.js?body=1"></script>
+<script src="/assets/media-embed_tpl.jst.self-b799c31096aa9be87875844c96219923adf26a1de46c6d942f3265f578d407f4.js?body=1"></script>
+<script src="/assets/no_posts_info_tpl.jst.self-542ca692405f7c51355dc264e53bd3531967d57b1cb3e1b58c6e16760908abd2.js?body=1"></script>
+<script src="/assets/oembed_tpl.jst.self-46541e5ae74ed6570bb4c003f12933d53799f834e2ebeb51e78229b946e57caf.js?body=1"></script>
+<script src="/assets/opengraph_tpl.jst.self-25de50ceb96c6086da93292dd16a3838ffcb4d7d03ac78ccaf0e7a15820ccefe.js?body=1"></script>
+<script src="/assets/photo_tpl.jst.self-12214fdecea22442bbcdb92076d49a8ee31982a8104026f06a92ecae37acbdc8.js?body=1"></script>
+<script src="/assets/pod_table_entry_tpl.jst.self-f4e0c257cf42eea22c502e46c0a070962a174357120dbee328cbee8bc810cb62.js?body=1"></script>
+<script src="/assets/pod_table_tpl.jst.self-2b082de757440f963508a5066fab6795518d28c0d3b18882c1539612f6f08072.js?body=1"></script>
+<script src="/assets/poll_creator_tpl.jst.self-9d75848f45f7e929eade5a0fbca0bf44e87ce770559bc923372c4858abb1df80.js?body=1"></script>
+<script src="/assets/poll_tpl.jst.self-b573ecf4a9cb053f1dcf1cf0cf98b6b73cf771607ed9736ff5cff7b2239aff40.js?body=1"></script>
+<script src="/assets/post-controls_tpl.jst.self-36f153c55bacb0fcac3ba4784b25498c879a8b1ea12c029992092fb48dfefdcd.js?body=1"></script>
+<script src="/assets/profile_header_tpl.jst.self-43f4a7a0b7a03d3ddc7411a50098c5b8d2b78acb8eff9235badef070f93490e9.js?body=1"></script>
+<script src="/assets/profile_sidebar_tpl.jst.self-5893c1ff5e2cc30e82299eb84afe455eb9f5363906ad7e9296188a6e196a48fa.js?body=1"></script>
+<script src="/assets/reshare_tpl.jst.self-ee11de50bab1581c0c818ce30b0f2ccf8d01495c70b6f6493e5defdd412fd4a3.js?body=1"></script>
+<script src="/assets/reshares-info_tpl.jst.self-e6dda554554db82ff93b0f90c8756aa4ea60c66c5583ef975588c0004290feb0.js?body=1"></script>
+<script src="/assets/search_suggestion_tpl.jst.self-295401dc57f1ec392557142df315bd94bd36254e1ff6b6303c74543bea108d4c.js?body=1"></script>
+<script src="/assets/single-post-viewer/single-post-actions_tpl.jst.self-b05ffa1e9d3183088c799d0112f5d69ca8e3888910962aaf9400ade091264efa.js?body=1"></script>
+<script src="/assets/single-post-viewer/single-post-content_tpl.jst.self-7054e8a50351f2b9cccb9c433561916e9d7c95da07f10f1bd50ecd54f675a724.js?body=1"></script>
+<script src="/assets/single-post-viewer/single-post-interaction-counts_tpl.jst.self-fe8ba1b7193c01a0401c14eca6baeed71d011f89d24595846f97db9b33296e78.js?body=1"></script>
+<script src="/assets/single-post-viewer/single-post-interactions_tpl.jst.self-7b6c25eba927a948b3a54139b0aa30c00023181ebd8b3d7e27bee60fa54a3f70.js?body=1"></script>
+<script src="/assets/single-post-viewer/single-post-moderation_tpl.jst.self-4413437f59a34b5699fbf7bdcc7c1cfd5f393dc23c57ea0f11993eaa0581dcb3.js?body=1"></script>
+<script src="/assets/single-post-viewer_tpl.jst.self-554610638119b036f0a549eddcc2b7ff13ff00b3e7076c385f599e0bca832727.js?body=1"></script>
+<script src="/assets/static-text_tpl.jst.self-41fe950a4963dc4d410ba60e2091c9d940801f512200509958c4c96d88c1ab00.js?body=1"></script>
+<script src="/assets/status-message-location_tpl.jst.self-4cf9ba6b373496ef43283c0c04849c6558f9a6261dccb04266615ae7983ac796.js?body=1"></script>
+<script src="/assets/status-message_tpl.jst.self-898004231be543b7423703a51e9860d867a93afdf9fd919bdb0156582c340d2b.js?body=1"></script>
+<script src="/assets/stream-element_tpl.jst.self-4e8809805d292312c10cc2f73ad00f54534f3bbae49903e632713a3029d206ee.js?body=1"></script>
+<script src="/assets/tag_following_action_tpl.jst.self-42f30830929285d5e5383ac3be59775fecd8b67b2060a678627b06a5148542d0.js?body=1"></script>
+<script src="/assets/tag_following_list_tpl.jst.self-926c48a4e7dfbc4e9031415848ee64dd968380b0ff321411cdb9c2375dcda06d.js?body=1"></script>
+<script src="/assets/tag_following_tpl.jst.self-f6fdc900cd61d382ce5f26a83fff6456e70f9e97bc6fbd4b14ce01edcb9d2d06.js?body=1"></script>
+<script src="/assets/posix-bracket-expressions.self-76159fd991e07511d0a1c17db8b226a1d8cc6d0bcb6313e54c68f8a83bd97e72.js?body=1"></script>
+<script src="/assets/markdown-it/markdown-it.self-b7918724871f0c2c7a7334204b431ee5e44a3764f15cb4c99cf7d30e0960ed33.js?body=1"></script>
+<script src="/assets/markdown-it.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1"></script>
+<script src="/assets/markdown-it-diaspora-mention/markdown-it-diaspora-mention.self-aa508e8f2d67ff11a0cc159241f7b169fbe2f3d3b5abd742b37ead5cb49eee3a.js?body=1"></script>
+<script src="/assets/markdown-it-diaspora-mention.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1"></script>
+<script src="/assets/markdown-it-for-inline/markdown-it-for-inline.self-ba8b9b4c69526c4b72a3619b9f2169caaa90a05ac66d3d7019066a6a31570ffa.js?body=1"></script>
+<script src="/assets/markdown-it-for-inline.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1"></script>
+<script src="/assets/markdown-it-hashtag/markdown-it-hashtag.self-1ee094fb41db81304feeeaae14708db04d3d21a4a28cdd9a469a98169517794e.js?body=1"></script>
+<script src="/assets/markdown-it-hashtag.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1"></script>
+<script src="/assets/markdown-it-sanitizer/markdown-it-sanitizer.self-41f0c7772926599addba00f2a3874e815011618847fac345ada3979bb06f4821.js?body=1"></script>
+<script src="/assets/markdown-it-sanitizer.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1"></script>
+<script src="/assets/markdown-it-sub/markdown-it-sub.self-7a4e5d79eba5ec6bd0a6a9254349733d00fd2e7a2e9f545d8dceb662bbe896db.js?body=1"></script>
+<script src="/assets/markdown-it-sub.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1"></script>
+<script src="/assets/markdown-it-sup/markdown-it-sup.self-6d8f544f45f6cd3b2e24c1bf39af7e7cff86c6f9e361461126b7957ba43b0471.js?body=1"></script>
+<script src="/assets/markdown-it-sup.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1"></script>
+<script src="/assets/markdown-it-html5-embed.self-c579a86e65116d575eb4b39a318c5faa22be9c3209243bb41b4e2387ecb62bfc.js?body=1"></script>
+<script src="/assets/highlightjs/highlight.pack.self-6bcdc359e8c3f006347599df0e5a5c8f9b385feb34c00e2cb03e537af133e90a.js?body=1"></script>
+<script src="/assets/highlightjs.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1"></script>
+<script src="/assets/clear-form.self-fc2e3dea548775e108992d35c30e0edec7abbb4b04d1a11e81f8d8d896b8aa50.js?body=1"></script>
+<script src="/assets/corejs-typeahead/typeahead.bundle.self-af60555fa5e69c07e6dcfd2a3235d70c6811f48e721cf55bf7f33da3da2fc5a7.js?body=1"></script>
+<script src="/assets/corejs-typeahead.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1"></script>
+<script src="/assets/app/app.self-3ca421c36947ade8742379457558043fcd8a6ba32888fdc0eefa07551da44c74.js?body=1"></script>
+<script src="/assets/app/helpers/date_formatter.self-31e6312d7694f30d3404e2b6e7c6dcd05daf3be3a9f4e40935406d01a3cbdbe5.js?body=1"></script>
+<script src="/assets/app/helpers/direction_detector.self-e3b0931f5406641431328a4cb760257fd1a02c33d0e1c476aff0106a5945ffa9.js?body=1"></script>
+<script src="/assets/app/helpers/handlebars-helpers.self-a76016736944fa3e2b99222e97b7c39e8ecb45592788814dd286dbd500c170aa.js?body=1"></script>
+<script src="/assets/app/helpers/handlebars-partials.self-311cb531cf23e325c94b633f9da61072795806f72b9d23981b1b008d4832494f.js?body=1"></script>
+<script src="/assets/app/helpers/locations.self-54f57050425536238a0449a3a6fd6e7cfbb3f80dc3cceb1a70fa14bb93040e7c.js?body=1"></script>
+<script src="/assets/app/helpers/modal_helper.self-830b39f1ed19801c878af7e67f1dc12978f279f2ce50b28968167f886a30c254.js?body=1"></script>
+<script src="/assets/app/helpers/o_embed.self-72a4b9d838e70d09bf6cfb701b761867e08179175e3a4523a2d3802064b368ed.js?body=1"></script>
+<script src="/assets/app/helpers/shortcuts.self-c4a846ab527cba0e5ab59fd381440c5937773d38d74c4e6e090786f2c1271c0f.js?body=1"></script>
+<script src="/assets/app/helpers/text_formatter.self-0fcb68abd4ca0dd92f138ad08e763ab2d886903b63715cec0a09f7f6c9bf15f8.js?body=1"></script>
+<script src="/assets/app/helpers/timeago.self-91adbb5a540161dadc6db59dbf0913995723ab44a7b3dac7bba0cd528d76661f.js?body=1"></script>
+<script src="/assets/app/helpers/truncate.self-b5f6597a35fe1b9455bc2d1e7dd316adb32335f1229f67eff5582bfaa9556499.js?body=1"></script>
+<script src="/assets/app/router.self-618b78e94119e0fa4deee5b6f149b19ada86e2a8bdafda6619221c53d1adce02.js?body=1"></script>
+<script src="/assets/app/models.self-6b0b272ca763087d13388838543eb1bae427f7906168ef11796c2a6f63aa9735.js?body=1"></script>
+<script src="/assets/app/views.self-3c17136b10c5a768a31ce792793ad60d5ae45641646b00e7760ac8a83b0be6aa.js?body=1"></script>
+<script src="/assets/app/views/infinite_stream_view.self-79d0f0d4980cafdb61b623f1b46b3ecbd5156980c6e020d1bf69c7705eb7a9c2.js?body=1"></script>
+<script src="/assets/app/models/aspect.self-e45a1915f04cd777bd774580004c8581d4db40ca30b08e0c3ff6f2baa23534d6.js?body=1"></script>
+<script src="/assets/app/models/aspect_membership.self-47ab0e81b3beaba7aede7bcbe4291a18119311bf29c7c31ce9f442110888569d.js?body=1"></script>
+<script src="/assets/app/models/aspect_selection.self-31e18bb809f552a9acceaea99e415aca6d9a30a1434b4a46398c57a1afceab73.js?body=1"></script>
+<script src="/assets/app/models/block.self-d20bff3140722167f5faf3c9524594688d82824a0f4cca73e170842f37693b4d.js?body=1"></script>
+<script src="/assets/app/models/comment.self-5f5000eb02cc77092ea73992824ec290bd9e6b5cb4e2f20960b818daf9b377ef.js?body=1"></script>
+<script src="/assets/app/models/contact.self-fca3df8f5de6c7507b05746f5b93471204073da9f380b33be826036acc2c4e1e.js?body=1"></script>
+<script src="/assets/app/models/like.self-72c5813b004dc9dbf44486c8b4a7c97459d67591c0e951d23618eef66cbbfe08.js?body=1"></script>
+<script src="/assets/app/models/notification.self-cc93fffc6164113346d73166c575026055f125aeb2dded0d2e65521ee0a31687.js?body=1"></script>
+<script src="/assets/app/models/person.self-53ac97bcc0086d217a8ea895a6bfc3029cbdc2740358da39c9a20ff98301affe.js?body=1"></script>
+<script src="/assets/app/models/photo.self-33f329220abe16a340a27106da7227a32ac7e4d690da9fb3a34b133c8c5d2037.js?body=1"></script>
+<script src="/assets/app/models/pod.self-710f0c4030968810e798d0db6ea86642c082418db8eae12850d0c9e5184e9cf1.js?body=1"></script>
+<script src="/assets/app/models/poll_participation.self-ae5c0ea67d8877d82f301f5f6251a9d2794496f23892d6a1ccb6b8259de6fe9f.js?body=1"></script>
+<script src="/assets/app/models/post.self-a46eab544651c025183f8b1fe060fce3f339202d85c3af399de259f00bcdc52a.js?body=1"></script>
+<script src="/assets/app/models/post/interactions.self-e2d582a68f4917e317410c642c6e3b134f105bd05137ce641f4d004e00e19d92.js?body=1"></script>
+<script src="/assets/app/models/profile.self-270407572fda0f557a403554060c412ad259e2766dae8c65b52db3028685adb2.js?body=1"></script>
+<script src="/assets/app/models/report.self-481f2e614c95970d4eaa6f0a7a8642a3607c0db6f2e90e6d58b18d7e6ecccd94.js?body=1"></script>
+<script src="/assets/app/models/reshare.self-0f77d755dac4563e051c05b81a97931f70f896717f98f44df9d4ccb1cc5c9600.js?body=1"></script>
+<script src="/assets/app/models/status_message.self-9da6c91cba24440f98b36a5563b5a597a4b7f8960b98048f99e678f67b584966.js?body=1"></script>
+<script src="/assets/app/collections/posts.self-1c405925f766d40191f2fc551e58b63ffe08999f5a2c9e871ae955aab484abd5.js?body=1"></script>
+<script src="/assets/app/collections/photos.self-1037f8345a458f20860e1f39437e4dc04dfc8b47b15c12132095db395abaecbe.js?body=1"></script>
+<script src="/assets/app/models/stream.self-8a7d26711c6bf165dfaad0b61cecdf87c3d51528325ee1450c750fcf704d8464.js?body=1"></script>
+<script src="/assets/app/models/stream_aspects.self-6cb06a42a679d4b5ab21b11a6ccf8b0fdf8c9391ed6baa4455566ea8cb2bf485.js?body=1"></script>
+<script src="/assets/app/models/tag_following.self-31211accf68ea169646d8ce725ce0680ccb574a6f1d678c30b75c351b3e77964.js?body=1"></script>
+<script src="/assets/app/models/user.self-9bf7437e8cdde467c4f8d370f42d915dc20580ee02ea27768ab76aad7d3eeba4.js?body=1"></script>
+<script src="/assets/app/pages/admin_dashboard.self-abc39ac016db8d26c97e9e9e79621c1424fc37034de73eab07352b65aef08464.js?body=1"></script>
+<script src="/assets/app/pages/admin_pods.self-556eb4bfd2a24d03b5ba212372599c4d3ab189bf3508afc7b9462b443d2c8278.js?body=1"></script>
+<script src="/assets/app/pages/contacts.self-b25f8cece23837fa075d5777a633c15932255c6e1b882c9554e7a47fdae79ff1.js?body=1"></script>
+<script src="/assets/app/pages/getting_started.self-33ad6762312a75c4cb8f9090b4f973e62d08f1af8d44f547a9887f8bf854b9fc.js?body=1"></script>
+<script src="/assets/app/pages/profile.self-f3fe2593dd583a7294bb8232febb52d30a57b0fdd186bac022f48d235d3a9085.js?body=1"></script>
+<script src="/assets/app/pages/registration.self-6241d8f502312088d474d08f7964d5e88d6236199ff6e205e1d6bf71ecc135d0.js?body=1"></script>
+<script src="/assets/app/pages/settings.self-f62eec55600882cff5a93758f5e223a45bcfb939ae774e69949def0d40cd2325.js?body=1"></script>
+<script src="/assets/app/pages/single-post-viewer.self-63945ada6831d5128eee51fc9fea266b5f3821d741c9fd08b76fd9aef4cfbbe4.js?body=1"></script>
+<script src="/assets/app/collections/aspect_memberships.self-84182ac0e2ebc199c5178106e63648274efc827f3edc366890fc22d78804cc38.js?body=1"></script>
+<script src="/assets/app/collections/aspect_selections.self-3708c1677304b25f9fb78cc76f3271181bb18a82ba214e05130781632dc6c377.js?body=1"></script>
+<script src="/assets/app/collections/aspects.self-c1295a92ec39526b0f42fb1654e678e3cb05bf4de56267ce10a97890b835ea53.js?body=1"></script>
+<script src="/assets/app/collections/comments.self-944574127528a679f7ec86f96a2d782c5f5796507272562fc1d0139bafc80d10.js?body=1"></script>
+<script src="/assets/app/collections/contacts.self-01cd8ddb45c1a0dc67823194b3bc58f07f3b36bebe60390b1326d796fb387fde.js?body=1"></script>
+<script src="/assets/app/collections/likes.self-b5299d06d1e199a5784eb403d35cf299bd26d0eb345d22725b6bb15c677589d8.js?body=1"></script>
+<script src="/assets/app/collections/notifications.self-c71e9aced53525e5c8cff9ca4aa12ed10abb31fb6808fc0707f9a80b3eeb71df.js?body=1"></script>
+<script src="/assets/app/collections/pods.self-c888f620357049f09807676c253828785674c2460033b01bf53525458f3ca189.js?body=1"></script>
+<script src="/assets/app/collections/reshares.self-964bf941d4c0ba60beb8fba7797caefb6462faa1890549f3202e7bd6fa3496ac.js?body=1"></script>
+<script src="/assets/app/collections/tag_followings.self-cc8fd38e3878c46ee79734ec2c320eadafbc0d553139003a221b16f4308b72c9.js?body=1"></script>
+<script src="/assets/app/views/aspect_create_view.self-e29847a30c85219cf0f1130baaaf93123507ed4415b2a8e92d65b94a56fe2e30.js?body=1"></script>
+<script src="/assets/app/views/aspect_membership_view.self-d6412362397e9343116f0e50ab1e41955f953d20b3e6f668e44878d230d4892f.js?body=1"></script>
+<script src="/assets/app/views/aspect_view.self-9cbd9cd7df77e0334c805306b5f80008221b617c85a08b2d2410f0db47f6a241.js?body=1"></script>
+<script src="/assets/app/views/aspects_dropdown_view.self-3fdbc42fd5562360436ceb4880cc1fc62f0f68fb587a67ccac809412f647a0f0.js?body=1"></script>
+<script src="/assets/app/views/aspects_list_view.self-1d6dd448c36e415d209ee0ab40e1962301549fac5fab75dabc52108d65555130.js?body=1"></script>
+<script src="/assets/app/views/back_to_top_view.self-c5f11270c32ff8b7ae292508ec1d55e509db54f8e90ac32751f3d577b3a6ca45.js?body=1"></script>
+<script src="/assets/app/views/bookmarklet_view.self-f174c9eff168b3090cbfb5f0c04031ea688175aedbad23b749eb0bf9f9fcf211.js?body=1"></script>
+<script src="/assets/app/views/search_base_view.self-1ef0bd65cf625f2147ead4b96a7aa2c4dfdd8ea8ee282b3d4e8de3bb84d8656d.js?body=1"></script>
+<script src="/assets/app/views/publisher/mention_view.self-dce80fb8464fafe1fce03dc8c9a7f8618f5ab1a038f085a7d04136f51aeded23.js?body=1"></script>
+<script src="/assets/app/views/comment_mention_view.self-6038d7282011dcebf2c0ca9a18fcf48798de24164f34eef656fe85887d16732b.js?body=1"></script>
+<script src="/assets/app/views/comment_stream_view.self-5a686848c6faf35a57cf58dc17f2c49c17b8cd4eb4b73fd7ef153fce70463c13.js?body=1"></script>
+<script src="/assets/app/views/content_view.self-e68df2e913b32ec2f52cdcb8f7904a913432ba017eabfebd551a269a40d7aa58.js?body=1"></script>
+<script src="/assets/app/views/comment_view.self-51b2ddd17eb026a1b0399f06114b75ec2acb61d49c02266e1342488427c8dd09.js?body=1"></script>
+<script src="/assets/app/views/contact_stream_view.self-607619cbea27ae71aaec7dc5f75cb3255fb41c2b67a17f0570f77299282c16e2.js?body=1"></script>
+<script src="/assets/app/views/contact_view.self-38403b25e84035c81cbaf46576c8eb85e4f20bf4eaf92899de6128569d494ae5.js?body=1"></script>
+<script src="/assets/app/views/conversations_form_view.self-b1ed84b14bc6beb5d6bf122c0e095b60cb704fac863ff64c65916dfc61230e76.js?body=1"></script>
+<script src="/assets/app/views/conversations_inbox_view.self-baadf3cf22d1ddc19eb1577bbc2a66f90281a9036971c01cbab09c5b6d2fe39d.js?body=1"></script>
+<script src="/assets/app/views/faq_question_view.self-5f79818b704d160bacbd518f15d71c251bbf95d52cf86c47bad9bb31eb41f991.js?body=1"></script>
+<script src="/assets/app/views/feedback_view.self-9b5ad2892ab69cebc2b8b11a656b9f92cc00c7aae684b3b37c6aee0a712bc6a9.js?body=1"></script>
+<script src="/assets/app/views/flash_messages_view.self-fa794f97da973e27485d03486a225f7176c57cbf0f04c083967e3f33219e59de.js?body=1"></script>
+<script src="/assets/app/views/gallery_view.self-315adc802cebf86d82efbd1d44349cdd50df55b3c696d44288f1c66a10185075.js?body=1"></script>
+<script src="/assets/app/views/header_view.self-d01f710d2b6ac8097bb8636802229155582f4d06c65853b98b3dc76a8034af39.js?body=1"></script>
+<script src="/assets/app/views/help_section_view.self-855e307846b29911ed0232556db2eabb8e2a440e76aebea4b393b41b5ef7243e.js?body=1"></script>
+<script src="/assets/app/views/help_view.self-fca25d3be905171a9f30385a8f02961c0b6e38e65789c0ba13c42dfb9c6c3031.js?body=1"></script>
+<script src="/assets/app/views/hovercard_view.self-60f66cf11b9f00e0664f3049b6dc787c71ec986d51ffd2415964bd94cabc27c9.js?body=1"></script>
+<script src="/assets/app/views/likes_info_view.self-409d76163828fd8941593fe93f9a867c6678c9ebbc7120412f2aaba31a29cc2c.js?body=1"></script>
+<script src="/assets/app/views/location_stream.self-055a7b4925f43fe0e47ab7b327a18f6d296f5457ae5f5c526f3011fd93c42e0a.js?body=1"></script>
+<script src="/assets/app/views/locator.self-78c6dbfa63b238668f88415f71f3801684bfd02a23b01eda85c95fb3c296776e.js?body=1"></script>
+<script src="/assets/app/views/no_posts_info_view.self-a5db781d84db9c0a117c84d3565ff1f7e8a735ff216a4c777ec45d01f7cf72f7.js?body=1"></script>
+<script src="/assets/app/views/notification_dropdown_view.self-5b453ee116d1631c973fbba056535b318cfe62f11240a0aab513a5980d336788.js?body=1"></script>
+<script src="/assets/app/views/notifications_view.self-717b4ccc4427f41dece9b0210e344644a52f5c53f58b24358f50b91d0ce9fa5a.js?body=1"></script>
+<script src="/assets/app/views/photo_view.self-9d1f285e50400f3f4ada5530bbe56a0b9830c33e74cd1b04c56e1350a82215b1.js?body=1"></script>
+<script src="/assets/app/views/photos_view.self-9f49d522d41e5cd37e88a965544332c5d7d70b989cc9efd101e48a71b588edfa.js?body=1"></script>
+<script src="/assets/app/views/pod_entry_view.self-48c6249f92a787f788a911f7b7f323ac4718ab317448d76ef9b04aafe7d6d9a2.js?body=1"></script>
+<script src="/assets/app/views/poll_view.self-dcd0da45a6e5f6a2adf32fa96e6b42aee99db2ebc5e1fb67c7f4dc9b37ba046b.js?body=1"></script>
+<script src="/assets/app/views/post_controls_view.self-df97a0ff61db45a735a8b04075cf732aa6cfdc98e18d1f997bfe328927739c37.js?body=1"></script>
+<script src="/assets/app/views/post_view.self-0ebef680a31aeceb66cc05d759d4025edff91b9c235cef0a312e69a19b7f3fe1.js?body=1"></script>
+<script src="/assets/app/views/preview_post_view.self-95f88f6fb0219a9d01fea674029ad1f0041e7bbc88e9d84678c884c8b13bd5d1.js?body=1"></script>
+<script src="/assets/app/views/profile_header_view.self-a9d6fcfc231e7971515ce4adafaecfc17537892caf281eebf732c51f0a4f60e5.js?body=1"></script>
+<script src="/assets/app/views/profile_sidebar_view.self-27e1fb4a2947409a543d9ec8aece5c98b2c67e03d2630429fc18c6a95b431601.js?body=1"></script>
+<script src="/assets/app/views/publisher/aspect_selector_view.self-dafd3b786068482f91bc93f4c24652b5523ec2410f4e94265a694a15235acb2b.js?body=1"></script>
+<script src="/assets/app/views/publisher/getting_started_view.self-00a3d41b3e1a3eb7881c156fd97e59459ebf6bd30afb1c21f467f34782626efe.js?body=1"></script>
+<script src="/assets/app/views/publisher/poll_creator_view.self-233ef7f2842389e81a19a69f1f2a86d808b1b735058212603c9de0f53b6b096d.js?body=1"></script>
+<script src="/assets/app/views/publisher/services_view.self-010b52f3b4257bf37bc80da6e7266d63e6485302dc897ec3d963c60fd31c9fbd.js?body=1"></script>
+<script src="/assets/app/views/publisher/uploader_view.self-2bd27e703068276d34f97eb5d58e1f695635df5e10c0b6b96fd59a6a2d423237.js?body=1"></script>
+<script src="/assets/jquery-textchange/jquery.textchange.self-fc382aec08b2261937cbb014e26130b65279cb1a5731905f664bbb6a6afad077.js?body=1"></script>
+<script src="/assets/jquery-textchange.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1"></script>
+<script src="/assets/app/views/publisher_view.self-edd573a3f66b353b8126696760ab509b535c5593476e3e65b744900d647bd534.js?body=1"></script>
+<script src="/assets/app/views/reshares_info_view.self-9ac11bcc8d4637dfb1fd62891a38efa4ed627fab7cc6b793b3dec29149cfbe1c.js?body=1"></script>
+<script src="/assets/app/views/search_view.self-a4a3c9be438e786240c33c85889d7db2e0ce7a7b8ebb38ba7c705de3aa3662d1.js?body=1"></script>
+<script src="/assets/app/views/sidebar.self-d21c67969bedc4c2ea0a7485722c56e79ba780f51a9f0d8fce380b89268f3339.js?body=1"></script>
+<script src="/assets/app/views/single-post-viewer/single_post_actions.self-e7d724e5b5250abb66fc80e0fed22a335c36bf8c6b200a89ee5c7ccb440bd4ab.js?body=1"></script>
+<script src="/assets/app/views/single-post-viewer/single_post_comment_stream.self-18909347f234a2146e07ec10c4aadb812f7646e1d523eba353ebb8e3b5d277ba.js?body=1"></script>
+<script src="/assets/app/views/single-post-viewer/single_post_content_view.self-57141c958c0d72c70d6e3802ae286eeddb567baddb87cfe913fc51af61613029.js?body=1"></script>
+<script src="/assets/app/views/single-post-viewer/single_post_interaction_counts.self-21fda455d6f6d30e339c0c604ddea9ece36a576e7b21c905f024afd3a7126e00.js?body=1"></script>
+<script src="/assets/app/views/single-post-viewer/single_post_interactions.self-d48daa28364f4999c7b79944b19570ffbd89b9cd9b301ae13d476eb0a50cf939.js?body=1"></script>
+<script src="/assets/app/views/single-post-viewer/single_post_moderation.self-3acbc1cbf63b8e625bb6314cf695c0936be325686a491ce8c905f5a127d42611.js?body=1"></script>
+<script src="/assets/app/views/stream/shortcuts.self-d34b745d3665a93440859a8993813c536b7213b4c72d6a08956bb7721150c1e6.js?body=1"></script>
+<script src="/assets/app/views/stream_post_views.self-a890e07f3bfeb100db3147b386a575d091880f2662aa3d45f726602ae2337d5a.js?body=1"></script>
+<script src="/assets/app/views/stream_view.self-54a13bc6843e5756d4246eb2c23627d74faf98d14ad7fc01c08650f41d0c6dd7.js?body=1"></script>
+<script src="/assets/app/views/tag_following_action_view.self-c9d003b48db48e379d63422029fad0a0c0a986444be370ccd2550f128e32e37c.js?body=1"></script>
+<script src="/assets/app/views/tag_following_list_view.self-bc8fae0d35abdebb096e8d4d75c776e14fe8197400ac30f33b5f0268ff81cc11.js?body=1"></script>
+<script src="/assets/app/views/tag_following_view.self-ffccc526a11dbfc9ea930509603ff055308ecd87d9e3b0b1ba60c6db45d70d15.js?body=1"></script>
+<script src="/assets/app/views/tags_view.self-6e5ab0e5fe3fe1d52861f72a8d0862d5072898278426a981babf542ccf17cd8f.js?body=1"></script>
+<script src="/assets/utatti-perfect-scrollbar/dist/perfect-scrollbar.self-0837e5bfbe931ce5c1bdf9fd55a0e133bdc021854412b1613166e6e61d06ed7c.js?body=1"></script>
+<script src="/assets/diaspora.self-c620ac0f87120d6c5301a4a23c1c0f16fceaebec0cd200951897de95ecf34139.js?body=1"></script>
+<script src="/assets/helpers/browser_notification.self-3d5ff3f6fefa9133706d46866f534e13f2173bb923c23ef10d85245587ecb479.js?body=1"></script>
+<script src="/assets/helpers/i18n.self-026b3b96eaa19058ca9b66bc4f3fd47c7e40d0f147876d36da7e143e7d4d4477.js?body=1"></script>
+<script src="/assets/helpers/markdown_editor.self-829b480fcb28afdf802528ef76dc078bf52fb59d9a96ab8e21febd5ca1362cda.js?body=1"></script>
+<script src="/assets/helpers/profile_photo_uploader.self-ae3efdef8377864e516080ac0e2ad7887f2e0111918bb50f1c22db79b6382293.js?body=1"></script>
+<script src="/assets/helpers/protocol_handler.self-97315749a4ea339e2fdffd9bca9bd4f9a676f36e43dff94a47796fd2de02403c.js?body=1"></script>
+<script src="/assets/helpers/tags_autocomplete.self-ddebb6f642d7d13a24189785417d292bef1967c820c3dd68e2665e55f7ce65ea.js?body=1"></script>
+<script src="/assets/pages/users-getting-started.self-9d57bd5e8f795583536d2ec4f99f122a0fa4a567a45ee7cf8db929d2bcd047d8.js?body=1"></script>
+<script src="/assets/widgets/direction-detector.self-b543a407a23117a1b13aa7829f26a77b5369a24e0913a41d505776293277a670.js?body=1"></script>
+<script src="/assets/widgets/timeago.self-3f1d085df7b0af50d1d39d5486fe86433d74d19d0944cee6e2b75e9980395fa0.js?body=1"></script>
+<script src="/assets/bootstrap/bootstrap.self-268df15f6dcd79a7aab1677a4cf8f1bf54a59cb6d1e805efa0e1f8071110762e.js?body=1"></script>
+<script src="/assets/bootstrap.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1"></script>
+<script src="/assets/osmlocator.self-6c6ce8e77e146f67ce527642d450c74ede85f199c360526a7bdc70f10cb13479.js?body=1"></script>
+<script src="/assets/bootstrap-switch.self-7094881291d5662bf6fbb008325795dcc2320c64df16bc411f851fb764b1470c.js?body=1"></script>
+<script src="/assets/blueimp-gallery/blueimp-gallery.self-ce7a7286244bb1bb20ebaf0c1d35a2e46b0b07a39020e458be9ab9fb2d9b71d9.js?body=1"></script>
+<script src="/assets/blueimp-gallery.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1"></script>
+<script src="/assets/blueimp-gallery/blueimp-gallery-indicator.self-3df1685ef12f96beb3f82151438fc15db3844947c209877891a8f241228f41e0.js?body=1"></script>
+<script src="/assets/leaflet-src.self-903546b6dbec78000b425c52ed6bb88164e03832af6cda7cbd0b6de5683a32aa.js?body=1"></script>
+<script src="/assets/leaflet.self-68220c237f87e9a1bc4698dc3bed0c2d820b2af7d0ca81d9a32f89b15b76d0e2.js?body=1"></script>
+<script src="/assets/api/authorization_page.self-d84e1aa10475a155551a3e0a38dd46c99991cdae6ed7a51c2ab7453fa7da3825.js?body=1"></script>
+<script src="/assets/bootstrap-markdown/bootstrap-markdown.self-2ccfe7c684feeecf2db90512c6c8bac84039c991254439cef7a9a3ccf3f1eba1.js?body=1"></script>
+<script src="/assets/jquery.are-you-sure/jquery.are-you-sure.self-0ba6bc7822535b249e9b8a6f019dde1bb712fc38407a430c68e08330a08c517e.js?body=1"></script>
+<script src="/assets/jquery.are-you-sure.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1"></script>
+<script src="/assets/main.self-481574e54b8515175a170462c7b49d9f8d4d030626c1b9ab913dff68a4256994.js?body=1"></script>
+<script nonce="yKL17dq3aMh0nTgE4dGgad5Zi7VL0Ied/TDeHY9ZpQ8=">        Diaspora.I18n.load({"cancel":"Cancel","confirm_dialog":"Are you sure?","confirm_unload":"Please confirm that you want to leave this page. Data you have entered won’t be saved.","create":"Create","delete":"Delete","ignore":"Ignore","report":{"prompt":"Please enter a reason:","prompt_default":"e.g. offensive content","name":"Report","status":{"created":"The report has successfully been created","exists":"The report already exists"}},"ignore_user":"Ignore this user?","ignore_failed":"Unable to ignore this user","hide_post":"Hide this post?","hide_post_failed":"Unable to hide this post","remove_post":"Remove this post?","unblock_failed":"Unblocking this user has failed","and":"and","comma":",","edit":"Edit","no_results":"No results found","show_all":"Show all","admins":{"dashboard":{"up_to_date":"Your pod is up to date!","outdated":"Your pod is outdated.","compare_versions":"The latest diaspora* release is \u003c%= latestVersion %\u003e, your pod is running \u003c%= podVersion %\u003e.","error":"Unable to determine latest diaspora* version."}},"admin":{"pods":{"pod":"Pod","ssl":"SSL","ssl_enabled":"SSL enabled","ssl_disabled":"SSL disabled","added":"Added","status":"Status","states":{"unchecked":"Unchecked","no_errors":"OK","dns_failed":"Name resolution (DNS) failed","net_failed":"Connection attempt failed","ssl_failed":"Secure connection (SSL) failed","http_failed":"HTTP connection failed","version_failed":"Unable to retrieve software version","unknown_error":"An unspecified error has happened during the check"},"actions":"Actions","offline_since":"offline since:","last_check":"last check:","more_info":"show more information","check":"perform connection test","recheck":{"success":"The pod was just checked again.","failure":"The check was not performed."},"follow_link":"open link in browser","no_info":"No additional information available at this point","server_software":"Server software:","response_time":"Response time:","ms":{"one":"\u003c%= count %\u003ems","other":"\u003c%= count %\u003ems"},"unknown":"unknown","not_available":"not available","unchecked":{"one":"There is still one pod that hasn't been checked at all.","other":"There are still \u003c%= count %\u003e pods that haven't been checked at all."},"version_failed":{"one":"There is one pod that has no version (old pod, no NodeInfo).","other":"There are \u003c%= count %\u003e pods that have no version (old pods, no NodeInfo)."},"errors":{"one":"The connection test returned an error for one pod.","other":"The connection test returned an error for \u003c%= count %\u003e pods."}}},"aspects":{"name":"Name","create":{"add_a_new_aspect":"Add a new aspect","success":"Your new aspect \u003c%= name %\u003e was created","failure":"Aspect creation failed."}},"errors":{"connection":"Unable to connect to the server."},"timeago":{"prefixAgo":"","prefixFromNow":"","suffixAgo":"ago","suffixFromNow":"from now","inPast":"any moment now","seconds":"less than a minute","minute":"about a minute","minutes":{"one":"1 minute","other":"%d minutes"},"hour":"about an hour","hours":{"one":"about 1 hour","other":"about %d hours"},"day":"a day","days":{"one":"1 day","other":"%d days"},"month":"about a month","months":{"one":"1 month","other":"%d months"},"year":"about a year","years":{"one":"1 year","other":"%d years"},"wordSeparator":" "},"contacts":{"add_contact":"Add contact","aspect_chat_is_enabled":"Contacts in this aspect are able to chat with you.","aspect_chat_is_not_enabled":"Contacts in this aspect are not able to chat with you.","remove_contact":"Remove contact","error_add":"Couldn’t add \u003c%= name %\u003e to the aspect :(","error_remove":"Couldn’t remove \u003c%= name %\u003e from the aspect :(","search_no_results":"No contacts found"},"my_activity":"My activity","my_stream":"Stream","my_aspects":"My aspects","publisher":{"near_from":"Posted from: \u003c%= location %\u003e","option":"Answer","add_option":"Add an answer","question":"Question","markdown_editor":{"preview":"Preview","write":"Write","tooltips":{"bold":"Bold","italic":"Italic","heading":"Heading","insert_link":"Insert link","insert_image":"Insert image","insert_ordered_list":"Insert ordered list","insert_unordered_list":"Insert unordered list","preview":"Preview message","write":"Edit message","cancel":"Cancel message","quote":"Insert quotation","code":"Insert code"},"texts":{"strong":"strong text","italic":"italic text","heading":"heading text","insert_link_description_text":"enter link description here","insert_link_help_text":"Insert link here","insert_image_description_text":"enter image description here","insert_image_help_text":"Insert image link here","insert_image_title":"enter image title here","list":"list text here","quote":"quotation text here","code":"code here"}},"mention_success":"Successfully mentioned: \u003c%= names %\u003e"},"bookmarklet":{"post_something":"Post to diaspora*","post_submit":"Submitting post...","post_success":"Posted! Closing popup window..."},"aspect_dropdown":{"add_to_aspect":"Add contact","select_aspects":"Select aspects","all_aspects":"All aspects","updating":"updating...","mobile_row_checked":"\u003c%= name %\u003e (remove)","mobile_row_unchecked":"\u003c%= name %\u003e (add)","stopped_sharing_with":"You have stopped sharing with \u003c%= name %\u003e.","started_sharing_with":"You have started sharing with \u003c%= name %\u003e!","error":"Couldn’t start sharing with \u003c%= name %\u003e. Are you ignoring them?","error_remove":"Couldn’t remove \u003c%= name %\u003e from the aspect :(","toggle":{"one":"In \u003c%= count %\u003e aspect","other":"In \u003c%= count %\u003e aspects"}},"show_more":"Show more","failed_to_post_message":"Failed to post message!","failed_to_remove":"Failed to remove the entry!","comments":{"show":"Show all comments","hide":"Hide comments","no_comments":"There are no comments yet."},"reshares":{"successful":"The post was successfully reshared!","post":"Reshare \u003c%= name %\u003e’s post?"},"aspect_navigation":{"select_all":"Select all","deselect_all":"Deselect all","no_aspects":"No aspects selected","add_an_aspect":"+ Add an aspect"},"getting_started":{"hey":"Hey, \u003c%= name %\u003e!","no_tags":"Hey, you haven’t followed any tags! Continue anyway?","alright_ill_wait":"All right, I’ll wait.","preparing_your_stream":"Preparing your personalized stream..."},"photo_uploader":{"upload_photos":"Upload photos","looking_good":"OMG, you look awesome!","completed":"\u003c%= file %\u003e completed","error":"A problem occurred while uploading file \u003c%= file %\u003e","invalid_ext":"{file} has invalid extension. Only {extensions} are allowed.","size_error":"{file} is too large, maximum file size is {sizeLimit}.","empty":"{file} is empty, please select files again without it."},"tags":{"wasnt_that_interesting":"OK, I suppose #\u003c%= tagName %\u003e wasn’t all that interesting..."},"people":{"not_found":"... and no one was found","mention":"Mention","message":"Message","edit_my_profile":"Edit my profile","stop_ignoring":"Stop ignoring","helper":{"is_sharing":"\u003c%= name %\u003e is sharing with you","is_not_sharing":"\u003c%= name %\u003e is not sharing with you"}},"profile":{"edit":"Edit","add_some":"Add some","you_have_no_tags":"You have no tags!","bio":"Bio","location":"Location","gender":"Gender","born":"Birthday","photos":"Photos","posts":"Posts"},"conversation":{"create":{"no_recipient":"Hey, you need to add a recipient first!"},"new":{"no_contacts":"You need to add some contacts before you can start a conversation."}},"notifications":{"mark_read":"Mark read","mark_unread":"Mark unread","new_notifications":{"one":"You have \u003c%= count %\u003e unread notification","other":"You have \u003c%= count %\u003e unread notifications"}},"stream":{"hide":"Hide","public":"Public","limited":"Limited","like":"Like","unlike":"Unlike","reshare":"Reshare","comment":"Comment","original_post_deleted":"Original post deleted by author","show_nsfw_post":"Show post","show_nsfw_posts":"Show all","hide_nsfw_posts":"Hide #nsfw posts","follow":"Follow","unfollow":"Unfollow","enable_post_notifications":"Enable notifications for this post","disable_post_notifications":"Disable notifications for this post","permalink":"Permalink","via":"via \u003c%= provider %\u003e","no_posts_yet":"There are no posts to display here yet.","likes":{"zero":"\u003c%= count %\u003e Likes","one":"\u003c%= count %\u003e Like","other":"\u003c%= count %\u003e Likes"},"reshares":{"zero":"\u003c%= count %\u003e Reshares","one":"\u003c%= count %\u003e Reshare","other":"\u003c%= count %\u003e Reshares"},"comments":{"zero":"\u003c%= count %\u003e comments","one":"\u003c%= count %\u003e comment","other":"\u003c%= count %\u003e comments"},"more_comments":{"zero":"Show \u003c%= count %\u003e more comments","one":"Show \u003c%= count %\u003e more comment","other":"Show \u003c%= count %\u003e more comments"},"followed_tag":{"title":"#Followed tags","add_a_tag":"Add a tag","follow":"Follow"},"tags":{"follow":"Follow #\u003c%= tag %\u003e","following":"Following #\u003c%= tag %\u003e","stop_following":"Stop following #\u003c%= tag %\u003e","stop_following_confirm":"Stop following #\u003c%= tag %\u003e?","follow_error":"Couldn’t follow #\u003c%= tag %\u003e :(","stop_following_error":"Couldn’t stop following #\u003c%= tag %\u003e :("}},"header":{"home":"Home","profile":"Profile","contacts":"Contacts","settings":"Settings","help":"Help","admin":"Admin","moderator":"Moderator","log_out":"Log out","toggle_navigation":"Toggle navigation","switch_to_touch_optimized_mode":"Switch to touch-optimized mode","notifications":"Notifications","conversations":"Conversations","search":"Search","recent_notifications":"Recent notifications","mark_all_as_read":"Mark all as read","view_all":"View all","close":"Close"},"viewer":{"reshared":"Reshared"},"poll":{"vote":"Vote","go_to_original_post":"You can participate in this poll on the \u003c%= original_post_link %\u003e.","original_post":"original post","result":"Result","count":{"one":"1 vote so far","other":"\u003c%=count%\u003e votes so far"},"answer_count":{"zero":"0 votes","one":"1 vote","other":"\u003c%=count%\u003e votes"},"show_result":"Show result","close_result":"Hide result","your_vote":"Your vote"},"pluralization_rule":"(function(input) { var runtime = (function(){return this.buildArgsFor=function(t){return[this.n(t),this.i(t),this.f(t),this.t(t),this.v(t),this.w(t)]},this.n=function(t){return this.toNum(t.indexOf(\".\")\u003e-1?this._n(t).replace(/([0]+\\.$)/,\"\"):this._n(t))},this.i=function(t){return this.toNum(this._i(t))},this.f=function(t){return this.toNum(this._f(t))},this.t=function(t){return this.toNum(this._t(t))},this.v=function(t){return this.toNum(this._v(t))},this.w=function(t){return this.toNum(this._w(t))},this.toNum=function(t){return 0==t.length?0:t.indexOf(\".\")\u003e-1?parseFloat(t):parseInt(t)},this._n=function(t){return/(-)?(.*)/.exec(t)[2]},this._i=function(t){return/([\\d]+)(\\..*)?/.exec(this._n(t))[1]},this._f=function(t){return/([\\d]+\\.?)(.*)/.exec(this._n(t))[2]},this._t=function(t){return this._f(t).replace(/([0]+$)/,\"\")},this._v=function(t){return this._f(t).length.toString()},this._w=function(t){return this._t(t).length.toString()},this}).call({}); var num = input.toString(); var n = runtime.n(num); var i = runtime.i(num); var v = runtime.v(num); var w = runtime.w(num); var f = runtime.f(num); var t = runtime.t(num); return ((i == 1 \u0026\u0026 v == 0) ? 'one' : 'other'); })","pod_name":"diaspora*"},
+                           "en",
+                           {"cancel":"Cancel","confirm_dialog":"Are you sure?","confirm_unload":"Please confirm that you want to leave this page. Data you have entered won’t be saved.","create":"Create","delete":"Delete","ignore":"Ignore","report":{"prompt":"Please enter a reason:","prompt_default":"e.g. offensive content","name":"Report","status":{"created":"The report has successfully been created","exists":"The report already exists"}},"ignore_user":"Ignore this user?","ignore_failed":"Unable to ignore this user","hide_post":"Hide this post?","hide_post_failed":"Unable to hide this post","remove_post":"Remove this post?","unblock_failed":"Unblocking this user has failed","and":"and","comma":",","edit":"Edit","no_results":"No results found","show_all":"Show all","admins":{"dashboard":{"up_to_date":"Your pod is up to date!","outdated":"Your pod is outdated.","compare_versions":"The latest diaspora* release is \u003c%= latestVersion %\u003e, your pod is running \u003c%= podVersion %\u003e.","error":"Unable to determine latest diaspora* version."}},"admin":{"pods":{"pod":"Pod","ssl":"SSL","ssl_enabled":"SSL enabled","ssl_disabled":"SSL disabled","added":"Added","status":"Status","states":{"unchecked":"Unchecked","no_errors":"OK","dns_failed":"Name resolution (DNS) failed","net_failed":"Connection attempt failed","ssl_failed":"Secure connection (SSL) failed","http_failed":"HTTP connection failed","version_failed":"Unable to retrieve software version","unknown_error":"An unspecified error has happened during the check"},"actions":"Actions","offline_since":"offline since:","last_check":"last check:","more_info":"show more information","check":"perform connection test","recheck":{"success":"The pod was just checked again.","failure":"The check was not performed."},"follow_link":"open link in browser","no_info":"No additional information available at this point","server_software":"Server software:","response_time":"Response time:","ms":{"one":"\u003c%= count %\u003ems","other":"\u003c%= count %\u003ems"},"unknown":"unknown","not_available":"not available","unchecked":{"one":"There is still one pod that hasn't been checked at all.","other":"There are still \u003c%= count %\u003e pods that haven't been checked at all."},"version_failed":{"one":"There is one pod that has no version (old pod, no NodeInfo).","other":"There are \u003c%= count %\u003e pods that have no version (old pods, no NodeInfo)."},"errors":{"one":"The connection test returned an error for one pod.","other":"The connection test returned an error for \u003c%= count %\u003e pods."}}},"aspects":{"name":"Name","create":{"add_a_new_aspect":"Add a new aspect","success":"Your new aspect \u003c%= name %\u003e was created","failure":"Aspect creation failed."}},"errors":{"connection":"Unable to connect to the server."},"timeago":{"prefixAgo":"","prefixFromNow":"","suffixAgo":"ago","suffixFromNow":"from now","inPast":"any moment now","seconds":"less than a minute","minute":"about a minute","minutes":{"one":"1 minute","other":"%d minutes"},"hour":"about an hour","hours":{"one":"about 1 hour","other":"about %d hours"},"day":"a day","days":{"one":"1 day","other":"%d days"},"month":"about a month","months":{"one":"1 month","other":"%d months"},"year":"about a year","years":{"one":"1 year","other":"%d years"},"wordSeparator":" "},"contacts":{"add_contact":"Add contact","aspect_chat_is_enabled":"Contacts in this aspect are able to chat with you.","aspect_chat_is_not_enabled":"Contacts in this aspect are not able to chat with you.","remove_contact":"Remove contact","error_add":"Couldn’t add \u003c%= name %\u003e to the aspect :(","error_remove":"Couldn’t remove \u003c%= name %\u003e from the aspect :(","search_no_results":"No contacts found"},"my_activity":"My activity","my_stream":"Stream","my_aspects":"My aspects","publisher":{"near_from":"Posted from: \u003c%= location %\u003e","option":"Answer","add_option":"Add an answer","question":"Question","markdown_editor":{"preview":"Preview","write":"Write","tooltips":{"bold":"Bold","italic":"Italic","heading":"Heading","insert_link":"Insert link","insert_image":"Insert image","insert_ordered_list":"Insert ordered list","insert_unordered_list":"Insert unordered list","preview":"Preview message","write":"Edit message","cancel":"Cancel message","quote":"Insert quotation","code":"Insert code"},"texts":{"strong":"strong text","italic":"italic text","heading":"heading text","insert_link_description_text":"enter link description here","insert_link_help_text":"Insert link here","insert_image_description_text":"enter image description here","insert_image_help_text":"Insert image link here","insert_image_title":"enter image title here","list":"list text here","quote":"quotation text here","code":"code here"}},"mention_success":"Successfully mentioned: \u003c%= names %\u003e"},"bookmarklet":{"post_something":"Post to diaspora*","post_submit":"Submitting post...","post_success":"Posted! Closing popup window..."},"aspect_dropdown":{"add_to_aspect":"Add contact","select_aspects":"Select aspects","all_aspects":"All aspects","updating":"updating...","mobile_row_checked":"\u003c%= name %\u003e (remove)","mobile_row_unchecked":"\u003c%= name %\u003e (add)","stopped_sharing_with":"You have stopped sharing with \u003c%= name %\u003e.","started_sharing_with":"You have started sharing with \u003c%= name %\u003e!","error":"Couldn’t start sharing with \u003c%= name %\u003e. Are you ignoring them?","error_remove":"Couldn’t remove \u003c%= name %\u003e from the aspect :(","toggle":{"one":"In \u003c%= count %\u003e aspect","other":"In \u003c%= count %\u003e aspects"}},"show_more":"Show more","failed_to_post_message":"Failed to post message!","failed_to_remove":"Failed to remove the entry!","comments":{"show":"Show all comments","hide":"Hide comments","no_comments":"There are no comments yet."},"reshares":{"successful":"The post was successfully reshared!","post":"Reshare \u003c%= name %\u003e’s post?"},"aspect_navigation":{"select_all":"Select all","deselect_all":"Deselect all","no_aspects":"No aspects selected","add_an_aspect":"+ Add an aspect"},"getting_started":{"hey":"Hey, \u003c%= name %\u003e!","no_tags":"Hey, you haven’t followed any tags! Continue anyway?","alright_ill_wait":"All right, I’ll wait.","preparing_your_stream":"Preparing your personalized stream..."},"photo_uploader":{"upload_photos":"Upload photos","looking_good":"OMG, you look awesome!","completed":"\u003c%= file %\u003e completed","error":"A problem occurred while uploading file \u003c%= file %\u003e","invalid_ext":"{file} has invalid extension. Only {extensions} are allowed.","size_error":"{file} is too large, maximum file size is {sizeLimit}.","empty":"{file} is empty, please select files again without it."},"tags":{"wasnt_that_interesting":"OK, I suppose #\u003c%= tagName %\u003e wasn’t all that interesting..."},"people":{"not_found":"... and no one was found","mention":"Mention","message":"Message","edit_my_profile":"Edit my profile","stop_ignoring":"Stop ignoring","helper":{"is_sharing":"\u003c%= name %\u003e is sharing with you","is_not_sharing":"\u003c%= name %\u003e is not sharing with you"}},"profile":{"edit":"Edit","add_some":"Add some","you_have_no_tags":"You have no tags!","bio":"Bio","location":"Location","gender":"Gender","born":"Birthday","photos":"Photos","posts":"Posts"},"conversation":{"create":{"no_recipient":"Hey, you need to add a recipient first!"},"new":{"no_contacts":"You need to add some contacts before you can start a conversation."}},"notifications":{"mark_read":"Mark read","mark_unread":"Mark unread","new_notifications":{"one":"You have \u003c%= count %\u003e unread notification","other":"You have \u003c%= count %\u003e unread notifications"}},"stream":{"hide":"Hide","public":"Public","limited":"Limited","like":"Like","unlike":"Unlike","reshare":"Reshare","comment":"Comment","original_post_deleted":"Original post deleted by author","show_nsfw_post":"Show post","show_nsfw_posts":"Show all","hide_nsfw_posts":"Hide #nsfw posts","follow":"Follow","unfollow":"Unfollow","enable_post_notifications":"Enable notifications for this post","disable_post_notifications":"Disable notifications for this post","permalink":"Permalink","via":"via \u003c%= provider %\u003e","no_posts_yet":"There are no posts to display here yet.","likes":{"zero":"\u003c%= count %\u003e Likes","one":"\u003c%= count %\u003e Like","other":"\u003c%= count %\u003e Likes"},"reshares":{"zero":"\u003c%= count %\u003e Reshares","one":"\u003c%= count %\u003e Reshare","other":"\u003c%= count %\u003e Reshares"},"comments":{"zero":"\u003c%= count %\u003e comments","one":"\u003c%= count %\u003e comment","other":"\u003c%= count %\u003e comments"},"more_comments":{"zero":"Show \u003c%= count %\u003e more comments","one":"Show \u003c%= count %\u003e more comment","other":"Show \u003c%= count %\u003e more comments"},"followed_tag":{"title":"#Followed tags","add_a_tag":"Add a tag","follow":"Follow"},"tags":{"follow":"Follow #\u003c%= tag %\u003e","following":"Following #\u003c%= tag %\u003e","stop_following":"Stop following #\u003c%= tag %\u003e","stop_following_confirm":"Stop following #\u003c%= tag %\u003e?","follow_error":"Couldn’t follow #\u003c%= tag %\u003e :(","stop_following_error":"Couldn’t stop following #\u003c%= tag %\u003e :("}},"header":{"home":"Home","profile":"Profile","contacts":"Contacts","settings":"Settings","help":"Help","admin":"Admin","moderator":"Moderator","log_out":"Log out","toggle_navigation":"Toggle navigation","switch_to_touch_optimized_mode":"Switch to touch-optimized mode","notifications":"Notifications","conversations":"Conversations","search":"Search","recent_notifications":"Recent notifications","mark_all_as_read":"Mark all as read","view_all":"View all","close":"Close"},"viewer":{"reshared":"Reshared"},"poll":{"vote":"Vote","go_to_original_post":"You can participate in this poll on the \u003c%= original_post_link %\u003e.","original_post":"original post","result":"Result","count":{"one":"1 vote so far","other":"\u003c%=count%\u003e votes so far"},"answer_count":{"zero":"0 votes","one":"1 vote","other":"\u003c%=count%\u003e votes"},"show_result":"Show result","close_result":"Hide result","your_vote":"Your vote"},"pluralization_rule":"(function(input) { var runtime = (function(){return this.buildArgsFor=function(t){return[this.n(t),this.i(t),this.f(t),this.t(t),this.v(t),this.w(t)]},this.n=function(t){return this.toNum(t.indexOf(\".\")\u003e-1?this._n(t).replace(/([0]+\\.$)/,\"\"):this._n(t))},this.i=function(t){return this.toNum(this._i(t))},this.f=function(t){return this.toNum(this._f(t))},this.t=function(t){return this.toNum(this._t(t))},this.v=function(t){return this.toNum(this._v(t))},this.w=function(t){return this.toNum(this._w(t))},this.toNum=function(t){return 0==t.length?0:t.indexOf(\".\")\u003e-1?parseFloat(t):parseInt(t)},this._n=function(t){return/(-)?(.*)/.exec(t)[2]},this._i=function(t){return/([\\d]+)(\\..*)?/.exec(this._n(t))[1]},this._f=function(t){return/([\\d]+\\.?)(.*)/.exec(this._n(t))[2]},this._t=function(t){return this._f(t).replace(/([0]+$)/,\"\")},this._v=function(t){return this._f(t).length.toString()},this._w=function(t){return this._t(t).length.toString()},this}).call({}); var num = input.toString(); var n = runtime.n(num); var i = runtime.i(num); var v = runtime.v(num); var w = runtime.w(num); var f = runtime.f(num); var t = runtime.t(num); return ((i == 1 \u0026\u0026 v == 0) ? 'one' : 'other'); })","pod_name":"diaspora*"});
+        Diaspora.Page = "SessionsCreate";
+</script>
+
+<meta name="csrf-param" content="authenticity_token">
+<meta name="csrf-token" content="vCDr+/SdcjCgPnwE2J0dmyFebp1AlL/VQ4W7apTO7cyzJCtp2QHV0onThx9oiqRF+7ojjsq3fg2tGkqMw5LP8g==">
+
+
+
+<style>        .translation_missing { color: purple; background-color: red; }
+</style>
+</head>
+<body class="page-sessions action-new">
+<header>
+<div class="dark-header">
+<nav class="navbar navbar-inverse navbar-fixed-top">
+<div class="container-fluid">
+<div class="row">
+<div class="col-md-12">
+<div class="not-connected-menu">
+<div class="navbar-header navbar-left">
+<div class="hidden-xs">
+<a class="navbar-brand" href="/">diaspora*</a>
+</div>
+<div class="visible-xs-block header-title">
+<a class="navbar-brand" href="/"><img class="img-responsive" src="/assets/branding/logos/asterisk_white_mobile-6e8e6a9049758f5f3b615e3ff56b1bfefcddc454e3ddd07a78754219639b089c.png"></a>
+</div>
+</div>
+<ul class="nav navbar-nav navbar-right">
+<li><a class="login" href="/users/sign_up">Create account</a></li>
+<li><a class="login" href="/users/sign_in">Sign in</a></li>
+</ul>
+
+</div>
+</div>
+</div>
+</div>
+</nav>
+</div>
+</header>
+
+
+<noscript>
+<div class='noscript'>
+<h3>This website requires JavaScript to function properly. If you disabled JavaScript, please enable it and refresh this page.</h3>
+</div>
+</noscript>
+<div class="container" id="login">
+<div class="text-center">
+<div class="logos-asterisk"></div>
+<h1>
+diaspora*
+</h1>
+</div>
+<form class="block-form" id="new_user" action="/users/sign_in" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="✓"><input type="hidden" name="authenticity_token" value="vCDr+/SdcjCgPnwE2J0dmyFebp1AlL/VQ4W7apTO7cyzJCtp2QHV0onThx9oiqRF+7ojjsq3fg2tGkqMw5LP8g=="><fieldset>
+<label class="sr-only" for="user_username" id="usernameLabel">
+Username
+</label>
+<i class="entypo-user"></i>
+<input placeholder="Username" class="input-block-level form-control" required="required" pattern="[A-Za-z0-9_.@-]+" autocapitalize="none" autocorrect="off" autofocus="autofocus" aria-labelledby="usernameLabel" type="text" value="fred" name="user[username]" id="user_username">
+<label class="sr-only" for="user_password" id="passwordLabel">
+Password
+</label>
+<i class="entypo-lock"></i>
+<input placeholder="Password" class="input-block-level form-control" required="required" autocapitalize="none" autocorrect="off" aria-labelledby="passwordLabel" type="password" name="user[password]" id="user_password">
+</fieldset>
+<input type="submit" name="commit" value="Sign in" class="btn btn-large btn-block btn-primary" data-disable-with="Sign in">
+</form>
+<div class="text-center">
+<a href="/users/sign_up">Create account</a>
+</div>
+</div>
+
+<footer class="footer">
+<div class="container">
+<div class="powered-by-diaspora pull-left">
+<a href="https://diasporafoundation.org">Powered by diaspora*</a>
+</div>
+<ul class="pull-right" id="footer_nav">
+<li><a href="https://discourse.diasporafoundation.org">Project discussions and support</a></li>
+<li><a href="https://github.com/diaspora/diaspora/blob/4ca68a71d92218809ab7c32d7122c26566e8dd0e/Changelog.md">What’s new?</a></li>
+<li><a title="Download the source code package" href="/source.tar.gz">Code 0.7.14.0</a></li>
+<li><a href="/statistics">Pod statistics</a></li>
+<li><a href="/mobile/toggle">Switch to touch-optimized mode</a></li>
+
+</ul>
+</div>
+</footer>
+
+
+<div class="blueimp-gallery blueimp-gallery-controls" id="blueimp-gallery">
+<div class="slides"></div>
+<a class="prev">
+<div class="entypo-chevron-small-left"></div>
+</a>
+<a class="next">
+<div class="entypo-chevron-small-right"></div>
+</a>
+<a class="close">
+<div class="entypo-cross"></div>
+</a>
+<a class="play-pause"></a>
+<ol class="indicator"></ol>
+</div>
+<div id="flash-container"><div class="flash-body expose"><div class="flash-message message alert alert-danger" role="alert">Invalid Username or password.</div></div></div>
+<a class="entypo-chevron-up back-to-top" href="#" id="back-to-top" title="Back to top"></a>
+
+
+
+
+</body></html>
